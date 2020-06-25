@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap");
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+ background-color: bisque;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container-index {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btns-index {
+  z-index: 1;
+  position: absolute;
+}
+
+.btn-start {
+  background: #e4a1aa;
+  border: 1px solid white;
+
+  width: 100px;
+  height: 75px;
+  border-radius: 30px;
+  margin: 20px;
+}
+
+.btn-start:hover {
+  background: #d94f4f;
+  color: white;
+  transform: scale(1.05);
+  border: 1px solid white;
+
+  width: 100px;
+  height: 75px;
+  border-radius: 30px;
+  margin: 20px;
+}
+
+.btn-how {
+  background: #e4a1aa;
+  width: 100px;
+  height: 75px;
+  border: 1px solid white;
+  border-radius: 30px;
+  margin: 20px;
+}
+
+.btn-how:hover {
+  background: #d94f4f;
+  color: white;
+  transform: scale(1.05);
+  border: 1px solid white;
+  width: 100px;
+  height: 75px;
+  border-radius: 30px;
+  margin: 20px;
+}
+.popup-para {
+  font-family: "Nothing You Could Do", cursive;
+
+  text-align: center;
+  color: transparent;
+}
+
+.popup-para.visible {
+  font-family: "Nothing You Could Do", cursive;
+  font-size: 20px;
+  text-align: center;
+  color: black;
+  transition: color 1s;
+}
+
+.index-main {
+  width: 500px;
+  height: 500px;
+  background-image: url(./ImagesPng/images/Fictional-Living-Room-With-An-Ocean-View_01.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.div-header {
+  background-color: white;
+  font-family: "Nothing You Could Do", cursive;
+  font-size: 30px;
+  width: 500px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.popup-index {
+  position: absolute;
+  transition: width 0.2s, height 0.2s, background-color 0.2s;
+
+  width: 0px;
+  height: 0px;
+}
+
+.popup-index.visible {
+  width: 450px;
+  height: 250px;
+  background-color: white;
+  z-index: 11;
+  border: 1px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 18px;
+}
+
+#objectsToFind {
+  width: 500px;
+  height: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+div.game-grid {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  border: 1px solid black;
+  background-image: url(./ImagesPng/images/Fictional-Living-Room-With-An-Ocean-View_01.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+div.game-grid-2 {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  border: 1px solid black;
+  background-image: url(./ImagesPng/images/Fictional-Apartment-In-A-Skyscraper_01.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+div.game-grid-3 {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  border: 1px solid black;
+  background-image: url(./ImagesPng/images/Corner.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.popup {
+  position: absolute;
+  transition: width 0.2s, height 0.2s, background-color 0.2s;
+  width: 0px;
+  height: 0px;
+}
+
+.popup.visible {
+  width: 450px;
+  height: 200px;
+  background-color: white;
+  z-index: 11;
+  border: 1px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.message1-2 {
+  font-family: "Nothing You Could Do", cursive;
+  font-size: 30px;
+}
+
+.popup-content {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.div-message-lost {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-nextlevel {
+  width: 100px;
+  height: 75px;
+  border-radius: 30px;
+  margin: 20px;
+}
+
+.btn-message-lost {
+  background: #e4a1aa;
+  width: 100px;
+  height: 75px;
+  border: 1px solid white;
+  border-radius: 30px;
+  margin: 20px;
+}
+
+.btn-message-lost:hover {
+  background: #d94f4f;
+  color: white;
+  transform: scale(1.05);
+  border: 1px solid white;
+  width: 100px;
+  height: 75px;
+  border-radius: 30px;
+  margin: 20px;
+}
+
+.layer1 {
+  width: 400px;
+  height: 400px;
+  opacity: 0.6;
+  z-index: 1;
+}
+
+.images {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+}
+
+.hideImage {
+  visibility: hidden;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+}
